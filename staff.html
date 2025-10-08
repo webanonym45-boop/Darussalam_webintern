@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff - SMP Darussalam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white shadow-md">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-xl font-bold">SMP Darussalam</h1>
+        <nav>
+          <ul class="hidden md:flex space-x-6 font-medium">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="teachers.html">Data Guru</a></li>
+            <li><a href="staff.html" class="text-yellow-300">Staff</a></li>
+            <li><a href="documentation.html">Dokumentasi</a></li>
+          </ul>
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            ☰
+          </button>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="hidden bg-blue-600 md:hidden">
+        <a href="index.html" class="block px-4 py-2">Beranda</a>
+        <a href="teachers.html" class="block px-4 py-2">Data Guru</a>
+        <a href="staff.html" class="block px-4 py-2">Staff</a>
+        <a href="documentation.html" class="block px-4 py-2">Dokumentasi</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container mx-auto py-10 px-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-6">Staff</h2>
+
+      <div class="space-y-4">
+        <!-- Kepala Sekolah -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <button
+            class="w-full text-left font-semibold text-lg flex justify-between items-center toggle-btn"
+          >
+            Kepala Sekolah <span class="text-gray-500">+</span>
+          </button>
+          <ul class="mt-4 pl-4 hidden space-y-2">
+            <li>
+              📂 Presensi Guru
+              <a
+                href="https://drive.google.com/drive/folders/1GccTxw8QdJeUW4fYmdDR38ku7RgHFdFt?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              📂 Data Kepegawaian Guru
+              <a
+                href="https://drive.google.com/drive/folders/1YUte0b5YL_wU49D7OyWPE3Yu3zE2uaNH?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              📂 Penilaian Kinerja Guru & Staff
+              <a
+                href="https://drive.google.com/drive/folders/1uiOJAphD6nEFacKVPOPunoQzQYNdnc-k?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
+                >Buka Folder</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bendahara -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <button
+            class="w-full text-left font-semibold text-lg flex justify-between items-center toggle-btn"
+          >
+            Bendahara <span class="text-gray-500">+</span>
+          </button>
+          <ul class="mt-4 pl-4 hidden space-y-2">
+            <li>
+              <button class="text-blue-600 font-medium sub-toggle">
+                Anggaran Dana Sekolah ⮟
+              </button>
+              <ul class="ml-6 mt-2 hidden list-disc space-y-2">
+                <li>
+                  Daftar Usulan Pengadaan
+                  <a
+                    href="https://drive.google.com/drive/folders/1Uuer35XM96gtqrpcRCoS_yHyji1x50b8?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  RAPBS
+                  <a
+                    href="https://drive.google.com/drive/folders/1TQLnB5bO2AH_W4JXuJFLGhAB_dTX4m_T?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  RKAS
+                  <a
+                    href="https://drive.google.com/drive/folders/1jBQ0lB8wd8awL734iOKhCqZsICFGD5G4?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  Surat Pencairan Dana
+                  <a
+                    href="https://drive.google.com/drive/folders/1q0ZT5k26HRJx4stoLHMSdkMW5xp2BeKv?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="text-blue-600 font-medium sub-toggle">
+                Laporan Keuangan ⮟
+              </button>
+              <ul class="ml-6 mt-2 hidden list-disc space-y-2">
+                <li>
+                  Buku Kas Umum
+                  <a
+                    href="https://drive.google.com/drive/folders/1VpooGbWQEODimHO1qaJsd-3nYVieEGJQ?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  Buku Pembantu Bank
+                  <a
+                    href="https://drive.google.com/drive/folders/168YmpDvN_ygO8LMI416K2XcXCsJxVLgC?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  Buku Pembantu Pajak
+                  <a
+                    href="https://drive.google.com/drive/folders/1WJudq6CDq0qcGascaNulaINlGwdHgIq2?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  Kwitansi
+                  <a
+                    href="https://drive.google.com/drive/folders/1-igmJxCfKmr2IDQnCj7yiMSy93h1SxU_?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  SPJ
+                  <a
+                    href="https://drive.google.com/drive/folders/1LS4-1PxdSUpr-oYmVLi21BuP_Fa2v1lg?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+                <li>
+                  Surat Perintah Membayar
+                  <a
+                    href="https://drive.google.com/drive/folders/1AFoEHHqwwZATcjWkFWiFUs_f45A45Uaf?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="text-blue-600 font-medium sub-toggle">
+                Laporan Pengelolaan Dana BOS ⮟
+              </button>
+              <ul class="ml-6 mt-2 hidden list-disc">
+                <li>
+                  Laporan Dana BOS
+                  <a
+                    href="https://drive.google.com/drive/folders/1I32OCWdxsVjSaKXb6Ffy1JfncqTYltEq?usp=sharing"
+                    target="_blank"
+                    class="ml-2 bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700"
+                    >Buka Folder</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Operator -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <button
+            class="w-full text-left font-semibold text-lg flex justify-between items-center toggle-btn"
+          >
+            Operator <span class="text-gray-500">+</span>
+          </button>
+          <ul class="mt-4 pl-4 hidden space-y-2">
+            <li>
+              📂 Input Data Sistem
+              <a
+                href="https://drive.google.com/drive/folders/10SfOsL9pbGr7A7sdQa4cY0zYs9uGaa_R?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-purple-600 text-white px-3 py-1 rounded text-sm hover:bg-purple-700"
+                >Buka Folder</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tata Usaha -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <button
+            class="w-full text-left font-semibold text-lg flex justify-between items-center toggle-btn"
+          >
+            Tata Usaha <span class="text-gray-500">+</span>
+          </button>
+          <ul class="mt-4 pl-4 hidden list-disc space-y-2">
+            <li>
+              Administrasi Kesiswaan
+              <a
+                href="https://drive.google.com/drive/folders/1_oStTId7415K-2r4xVDc3iFuDizyIdJy?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-purple-600 text-white px-3 py-1 rounded text-sm hover:bg-purple-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Administrasi Sarpras Sekolah
+              <a
+                href="https://drive.google.com/drive/folders/1scndk60yPjAaXKbdtYkUxv8BQusHzLOW?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-purple-600 text-white px-3 py-1 rounded text-sm hover:bg-purple-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Administrasi Umum
+              <a
+                href="https://drive.google.com/drive/folders/1vTIFYrgV3FFfCq7BjTh172Mt7zYrqdLE?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-purple-600 text-white px-3 py-1 rounded text-sm hover:bg-purple-700"
+                >Buka Folder</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Waka Kesiswaan -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <button
+            class="w-full text-left font-semibold text-lg flex justify-between items-center toggle-btn"
+          >
+            Waka Kesiswaan <span class="text-gray-500">+</span>
+          </button>
+          <ul class="mt-4 pl-4 hidden list-disc space-y-2">
+            <li>
+              Arsip Ijazah Siswa
+              <a
+                href="https://drive.google.com/drive/folders/1lIs9-tijd8e5T9VNeOvvY0sQK7iIOXAS?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Data Ekstrakurikuler
+              <a
+                href="https://drive.google.com/drive/folders/18orAqKdnEnmP0Gq1DqbJ1dIyvUuVTD4l?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Data Mutasi Siswa
+              <a
+                href="https://drive.google.com/drive/folders/1ap2qPxyIkt3i32PA4tpj1sRfEpPjgiG6?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Data Kedisiplinan
+              <a
+                href="https://drive.google.com/drive/folders/1jkIoN0GVjhldxFnkLnV5Ig8vjtHRbZN-?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700"
+                >Buka Folder</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Waka Kurikulum -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <button
+            class="w-full text-left font-semibold text-lg flex justify-between items-center toggle-btn"
+          >
+            Waka Kurikulum <span class="text-gray-500">+</span>
+          </button>
+          <ul class="mt-4 pl-4 hidden list-disc space-y-2">
+            <li>
+              Data Kenaikan & Kelulusan Siswa
+              <a
+                href="https://drive.google.com/drive/folders/1eN2J3D_bMgcDK0RiCkZ5EfhyVZ3WlQ6u?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Kalender Pendidikan
+              <a
+                href="https://drive.google.com/drive/folders/166y_yl0doKJbsRjTas0IYJ93J_gjz3v_?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              MKG
+              <a
+                href="https://drive.google.com/drive/folders/1g-jw1bV3D3rpVIbDzp-K8OKoJOm_MkIC?usp=drive_link"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Kop Ujian (SMP & MA)
+              <a
+                href="https://drive.google.com/drive/folders/1RQbeA-C2_KD2yoUcyyOId75NhaE433L-?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              SK Mengajar Guru
+              <a
+                href="https://drive.google.com/drive/folders/1VcYQoW-GHMTgHyNljMCwq8OPzsoEJIaj?usp=sharing"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              MKGB
+              <a
+                href="https://drive.google.com/drive/folders/1tK6musssOTPwaK9HwliDV2O-q-cH5B8F?usp=drive_link"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Penilaian Kinerja Guru
+              <a
+                href="https://drive.google.com/drive/folders/1wlmTz2npn3iSMT1vvAuDkmk4bomBoI9C?usp=drive_link"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+            <li>
+              Bank Soal
+              <a
+                href="https://drive.google.com/drive/folders/12lTqtVDU5vIa9bhUIOx2VgZ8KP_VPge0?usp=drive_link"
+                target="_blank"
+                class="ml-2 bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700"
+                >Buka Folder</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-6 mt-12 text-center">
+      <p>&copy; 2025 SMP Darussalam</p>
+    </footer>
+
+    <!-- Script Accordion -->
+    <script>
+      document.querySelectorAll(".toggle-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const ul = btn.nextElementSibling;
+          ul.classList.toggle("hidden");
+          btn.querySelector("span").textContent = ul.classList.contains(
+            "hidden"
+          )
+            ? "+"
+            : "-";
+        });
+      });
+
+      document.querySelectorAll(".sub-toggle").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const ul = btn.nextElementSibling;
+          ul.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

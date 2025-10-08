@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMP Darussalam - Dashboard Kepegawaian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-800 text-white shadow-md">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo + Nama Sekolah -->
+        <div class="flex items-center space-x-3">
+          <img
+            src="smpdarussalam.png"
+            alt="Logo SMP Darussalam"
+            class="h-10 w-10 object-contain"
+          />
+          <h1 class="text-xl font-bold">SMP Darussalam</h1>
+        </div>
+
+        <!-- Navigasi -->
+        <nav>
+          <ul class="hidden md:flex space-x-6 font-medium">
+            <li>
+              <a href="index.html" class="hover:text-yellow-300">Beranda</a>
+            </li>
+            <li>
+              <a href="teachers.html" class="hover:text-yellow-300"
+                >Data Guru</a
+              >
+            </li>
+            <li>
+              <a href="staff.html" class="hover:text-yellow-300">Staff</a>
+            </li>
+            <li>
+              <a href="documentation.html" class="hover:text-yellow-300"
+                >Dokumentasi</a
+              >
+            </li>
+          </ul>
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            ☰
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-16"
+    >
+      <h2 class="text-3xl font-bold mb-4">
+        Dashboard Kepegawaian SMP Darussalam
+      </h2>
+      <p class="text-lg">Data Guru, Staff, dan Dokumentasi Kegiatan Sekolah</p>
+    </section>
+
+    <!-- Ringkasan -->
+    <section class="container mx-auto py-10 px-6 text-center">
+      <h3 class="text-2xl font-semibold text-blue-800 mb-4">
+        Tentang Website Ini
+      </h3>
+      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        Website ini dibuat sebagai pusat informasi kepegawaian di SMP
+        Darussalam. Pengunjung dapat melihat data guru beserta mata pelajaran
+        yang diampu, informasi staff sekolah, serta dokumentasi kegiatan dan
+        event penting. Dengan tampilan sederhana dan mudah diakses, website ini
+        membantu mempermudah komunikasi dan transparansi informasi di lingkungan
+        sekolah.
+      </p>
+    </section>
+
+    <!-- Cards -->
+    <section class="container mx-auto py-12 px-6 grid md:grid-cols-3 gap-8">
+      <div
+        class="bg-white p-6 rounded-xl shadow border border-gray-200 hover:bg-blue-50 transition"
+      >
+        <div class="flex items-center space-x-3 mb-4">
+          <i data-lucide="users" class="w-6 h-6 text-blue-700"></i>
+          <h3 class="text-xl font-bold text-blue-700">Data Guru</h3>
+        </div>
+        <p class="text-gray-600">
+          Lihat informasi guru dan mata pelajaran yang diampu.
+        </p>
+        <a
+          href="teachers.html"
+          class="text-cyan-600 mt-4 inline-block font-medium"
+          >Lihat Data →</a
+        >
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow border border-gray-200 hover:bg-blue-50 transition"
+      >
+        <div class="flex items-center space-x-3 mb-4">
+          <i data-lucide="user-cog" class="w-6 h-6 text-blue-700"></i>
+          <h3 class="text-xl font-bold text-blue-700">Staff</h3>
+        </div>
+        <p class="text-gray-600">Informasi staff tata usaha dan lainnya.</p>
+        <a href="staff.html" class="text-cyan-600 mt-4 inline-block font-medium"
+          >Lihat Staff →</a
+        >
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow border border-gray-200 hover:bg-blue-50 transition"
+      >
+        <div class="flex items-center space-x-3 mb-4">
+          <i data-lucide="camera" class="w-6 h-6 text-blue-700"></i>
+          <h3 class="text-xl font-bold text-blue-700">Dokumentasi</h3>
+        </div>
+        <p class="text-gray-600">Foto kegiatan sekolah dan event penting.</p>
+        <a
+          href="documentation.html"
+          class="text-cyan-600 mt-4 inline-block font-medium"
+          >Lihat Dokumentasi →</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6 mt-12 text-center">
+      <p>&copy; 2025 SMP Darussalam. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Aktifkan ikon -->
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
